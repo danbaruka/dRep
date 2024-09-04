@@ -1,0 +1,133 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a401010327200621582091d76b5cfcb1ab407e498729858991f8976a4439c42c5d521898b34e449d54d7"
+        },
+        "signature": {
+          "@value": "84582aa201276761646472657373581d6196eb1353bce691ade6b3810d0cc613e0eecfd06d80c371ce4246080aa166686173686564f458445665726966792044526570206472657031773979617364647338736c6a346c30757766727970646d7938676c3338706d7a36353467347037757473686e673835776a74335840b64261c65d5cfc2c6c07b680f04f634e3609a67a58c713fba823c5fe98e064109a086ca4e3311817509a41b4b0108198f96801bbb135b65a3ee6fedcc3154e0e"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Tech entrepreneur with a strong background in blockchain development and community leadership. Passionate about leveraging decentralized technology to drive innovation and economic empowerment. Committed to representing and advocating for the interests of the Cardano community in Cardano's governance."
+    },
+    "email": {
+      "@value": "danamphred@gmail.com"
+    },
+    "givenName": {
+      "@value": "Dan Baruka"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmcAAfChhf1KFg4QBVgYEGMDXrfQ7GtJ9aqgzdV2b1tRsW",
+      "sha256": "2dc71ac1c0570329da0141f7a716610d0fb2ae1898386f201bedc7e50fa908d7"
+    },
+    "motivations": {
+      "@value": "Driven by a passion for decentralized technology, I am motivated to contribute to Cardano's growth and ensure that the community's voice is well-represented. My commitment to innovation and equitable development inspires me to take an active role in shaping the future of the Cardano ecosystem. I believe in the transformative potential of blockchain and am eager to help guide its evolution for the benefit of all stakeholders."
+    },
+    "objectives": {
+      "@value": "As a Cardano Community dRep, my mission is to ensure that all voices within the Cardano ecosystem are heard and represented in governance. I believe in the power of decentralized technology to drive global innovation and economic growth. Committed to transparency and inclusivity, I aim to advocate for the interests of ADA holders, contributing to Cardano’s evolution as a catalyst for positive change and equitable development worldwide."
+    },
+    "paymentAddress": {
+      "@value": "addr1qxtwky6nhnnfrt0xkwqs6rxxz0swan7sdkqvxuwwgfrqszjud9yhc0j4upaz66c6fqrhy4lmv9su4rwn30c6ld4ggruqvhq6w8"
+    },
+    "qualifications": {
+      "@value": "- Extensive experience in blockchain development and project management.\n- Proven leadership in technology and community-driven initiatives.\n- Strong analytical skills for evaluating governance proposals.\n- Deep understanding of Cardano’s technology and ecosystem.\n- Commitment to transparency, inclusivity, and ethical decision-making."
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Twitter(X)"
+        },
+        "uri": {
+          "@value": "https://x.com/danamphred"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/danbaruka/"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Discord"
+        },
+        "uri": {
+          "@value": "@danbaruka"
+        }
+      }
+    ]
+  }
+}
