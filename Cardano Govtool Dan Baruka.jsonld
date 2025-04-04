@@ -1,5 +1,6 @@
 {
   "@context": {
+    "@language": "en-us",
     "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
     "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
     "hashAlgorithm": "CIP100:hashAlgorithm",
@@ -27,7 +28,14 @@
         },
         "paymentAddress": "CIP119:paymentAddress",
         "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
         "objectives": "CIP119:objectives",
         "motivations": "CIP119:motivations",
         "qualifications": "CIP119:qualifications",
@@ -50,11 +58,14 @@
       }
     }
   },
-  "authors": [],
   "hashAlgorithm": "blake2b-256",
   "body": {
-    "doNotList": false,
     "givenName": "Dan Baruka",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "",
+      "sha256": "5f09340c3a25decc291c653eee14df5f40a2b038a48d2179473775b4fdf5a05e"
+    },
     "motivations": "Driven by a passion for decentralized technology, I am motivated to contribute to Cardano's growth and ensure that the community's voice is well-represented. My commitment to innovation and equitable development inspires me to take an active role in shaping the future of the Cardano ecosystem. I believe in the transformative potential of blockchain and am eager to help guide its evolution for the benefit of all stakeholders.",
     "objectives": "As a Cardano Community dRep, my mission is to ensure that all voices within the Cardano ecosystem are heard and represented in governance. I believe in the power of decentralized technology to drive global innovation and economic growth. Committed to transparency and inclusivity, I aim to advocate for the interests of ADA holders, contributing to Cardano’s evolution as a catalyst for positive change and equitable development worldwide.",
     "paymentAddress": "addr1qxtwky6nhnnfrt0xkwqs6rxxz0swan7sdkqvxuwwgfrqszjud9yhc0j4upaz66c6fqrhy4lmv9su4rwn30c6ld4ggruqvhq6w8",
@@ -68,7 +79,7 @@
       {
         "@type": "Identity",
         "label": "Bio Link",
-        "uri": "https://links.updev.africa/danbaruka"
+        "uri": "https://danbarukadrep.netlify.app"
       }
     ]
   }
